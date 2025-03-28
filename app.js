@@ -9,17 +9,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const defaultTodos = {
         morning: [
-            { text: 'ÐŸÐ Ð•Ð¡Ð¡ ÐšÐÐ§ÐÐ¢', completed: false },
-            { text: 'Ð¢) Ð‘Ð•Ð“Ð˜Ð¢', completed: false },
-            { text: 'Ð¢Ð£Ð ÐÐ˜Ðš', completed: false },
-            { text: 'ÐÐÐ–Ð£ÐœÐÐÐ¯', completed: false }
+            { text: 'Разминка', completed: false },
+            { text: 'Бег до турников', completed: false },
+            { text: 'Упражнения на турниках: Подтягивания, брусья, пресс', completed: false },
+            { text: 'Бег назад домой', completed: false }
         ],
         afternoon: [],
         evening: [
-            { text: 'ÐŸÐ Ð•Ð¡Ð¡ ÐšÐÐ§ÐÐ¢', completed: false },
-            { text: 'Ð‘Ð•Ð“Ð˜Ð¢', completed: false },
-            { text: 'Ð¢Ð£Ð ÐÐ˜Ðš', completed: false },
-            { text: 'ÐÐÐ–Ð£ÐœÐÐÐ¯', completed: false }
+            { text: 'Разминка', completed: false },
+            { text: 'Отжимания: 15, 10, 5 раз.', completed: false },
+            { text: 'Приседания', completed: false },
+            { text: 'Турник: Максималка', completed: false }
         ]
     };
     let todos = JSON.parse(localStorage.getItem('todos')) || defaultTodos;
