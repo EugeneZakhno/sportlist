@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>БЕГИТ</title>
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="begit.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Trismegistus.tech">
+    <meta property="og:url" content="https://trismegistus.tech/apps/begit/">
+    <meta property="og:title" content="БЕГИТ - Список Дел">
+    <meta property="og:description" content="Мотивационный список дел с шрифтом БЕГИТ">
+    <meta property="og:image" content="https://trismegistus.tech/apps/begit/img/begit.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:site" content="@hermesiss">
+    <meta property="twitter:url" content="https://trismegistus.tech/apps/begit/">
+    <meta property="twitter:title" content="БЕГИТ - Список Дел">
+    <meta property="twitter:description" content="Мотивационный список дел с шрифтом БЕГИТ">
+    <meta property="twitter:image" content="https://trismegistus.tech/apps/begit/img/begit.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://trismegistus.tech/apps/begit/css/style.css?v=1.0.4">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P0XJ40SJQS"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-P0XJ40SJQS');
+</script>
+
+<body>
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="card shadow-sm paper">
+                    <div class="card-body">
+                        <div class="sections-container mt-4">
+                            <div class="section-block mb-4">
+                                <div class="section-header-container">
+                                    <h2 class="section-header">УТРОМ</h2>
+                                    <button class="add-btn" data-section="morning">+</button>
+                                </div>
+                                <ul id="morning-list" class="list-group mt-2 todo-section"></ul>
+                            </div>
+
+                            <div class="section-block mb-4">
+                                <div class="section-header-container">
+                                    <h2 class="section-header">ДНЁМ</h2>
+                                    <button class="add-btn" data-section="afternoon">+</button>
+                                </div>
+                                <ul id="afternoon-list" class="list-group mt-2 todo-section"></ul>
+                            </div>
+
+                            <div class="section-block mb-4">
+                                <div class="section-header-container">
+                                    <h2 class="section-header">ВЕЧЕРОМ</h2>
+                                    <button class="add-btn" data-section="evening">+</button>
+                                </div>
+                                <ul id="evening-list" class="list-group mt-2 todo-section"></ul>
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-3">
+                            <button id="clear-todos" class="btn btn-sm btn-outline-danger">Очистить Все</button>
+                        </div>
+                        <div class="text-center mt-4">
+                            <a href="https://github.com/private-face/begit" class="btn btn-sm btn-outline-secondary me-2" onclick="event.preventDefault(); gtag('event', 'click', {'event_category': 'button', 'event_label': 'font'}); window.location.href=this.href;">ШРИФТ</a>
+                            <a href="https://colibrythm.trismegistus.tech/?utm_source=begit&utm_medium=button&utm_campaign=bottom_link" class="btn btn-sm btn-outline-secondary me-2" onclick="event.preventDefault(); gtag('event', 'click', {'event_category': 'button', 'event_label': 'colibrythm'}); window.location.href=this.href;">СДВГ-планнер</a>
+                            <a href="https://www.linkedin.com/in/hermesiss/" class="btn btn-sm btn-outline-secondary" onclick="event.preventDefault(); gtag('event', 'click', {'event_category': 'button', 'event_label': 'linkedin'}); window.location.href=this.href;">ЛИНКЕДИН</a>
+                            <!-- <a href="https://ko-fi.com/hermesistrismegistus" target="_blank" class="btn btn-sm btn-outline-secondary ">ДОНАТЫ</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://trismegistus.tech/apps/begit/js/app.js?v=1.0.1"></script>
+</body>
+
+</html>
